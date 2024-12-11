@@ -1,0 +1,117 @@
+@import "css/media-queries";
+
+.container {
+  position: fixed;
+  z-index: 9999;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  @include device(mobile) {
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: auto;
+    transform: none;
+  }
+}
+
+.item {
+  align-self: flex-start;
+  position: relative;
+  padding: 22px 24px 22px;
+  border-radius: 16px;
+  margin: 8px auto 0;
+  color: #fff;
+  background: red;
+  animation: fade_in_show 0.15s;
+
+  @include device(mobile) {
+    border-radius: 0;
+    animation: fade_in_show_mobile 0.15s;
+    margin: 0 0 1px;
+    width: 100%;
+  }
+}
+
+.success {
+  color: var(--color-background);
+  background: var(--color-accent);
+}
+
+.blur {
+  color: #000;
+  background: #dfe6e8cc;
+  backdrop-filter: blur(40px);
+}
+
+.bookmark {
+  display: flex;
+}
+
+.iconBookmark {
+  margin: -1px 14px 0 0;
+}
+
+.iconGreater {
+  opacity: .3;
+  margin: 3px 0 0 12px;
+}
+
+.hidden {
+  opacity: 0;
+  animation: fade_in_hide 0.15s;
+
+  @include device(mobile) {
+    animation: fade_in_hide_mobile 0.15s;
+  }
+}
+
+@keyframes fade_in_show {
+  0% {
+    opacity: 0;
+    transform: scale(.95) translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1)
+  }
+}
+
+@keyframes fade_in_hide {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(.95) translateY(-10px);
+  }
+}
+
+@keyframes fade_in_show_mobile {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1)
+  }
+}
+
+@keyframes fade_in_hide_mobile {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+}

@@ -1,0 +1,42 @@
+@import "media-queries";
+@import "colors";
+
+body {
+  position: relative;
+  padding: 0 0;
+  margin: 0 0;
+  font-family: "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: var(--color-background);
+  color: var(--color-accent);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizelegibility;
+  text-align: left;
+  min-height: -webkit-fill-available;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body, html {
+  height: 100%;
+  position: relative;
+  quotes: "“" "”";
+}
+
+html {
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+#body-fixed {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+#root {
+  position: relative;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}

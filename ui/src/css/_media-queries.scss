@@ -1,0 +1,32 @@
+@mixin device($point) {
+
+  $device-desktop-with-padding: "(max-width: 1692px)";
+  $device-desktop: "(max-width: 1600px)";
+  $device-tablet: "(max-width: 980px)";
+  $device-mobile: "(max-width: 768px)";
+
+  @if $point == desktop-with-padding {
+    @media #{$device-desktop-with-padding} {
+      @content;
+    }
+  }
+
+  @if $point == desktop {
+    @media #{$device-desktop} {
+      @content;
+    }
+  }
+
+  @else if $point == tablet {
+    @media #{$device-tablet} {
+      @content;
+    }
+  }
+
+  @else if $point == mobile {
+    @media #{$device-mobile} {
+      @content;
+    }
+  }
+  
+}

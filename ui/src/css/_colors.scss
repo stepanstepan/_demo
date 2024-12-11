@@ -1,0 +1,50 @@
+body {
+  --color-light-shades-1: #F7F8FB;
+  --color-light-shades-2: #EEF0F6;
+  --color-light-shades-3: #DDDFEA;
+  --color-light-shades-4: #C2C6D7;
+  --color-light-shades-5: #9FA5BA;
+  --color-light-shades-6: #777D90;
+  --color-light-shades-7: #525769;
+  --color-light-shades-8: #2D313F;
+
+  --color-light-shades-alpha-1: rgba(55, 80, 155, 0.04);
+  --color-light-shades-alpha-2: rgba(12, 41, 126, 0.07);
+  --color-light-shades-alpha-3: rgba(12, 26, 105, 0.14);
+  --color-light-shades-alpha-4: rgba(1, 17, 88, 0.24);
+  --color-light-shades-alpha-5: rgba(2, 18, 73, 0.38);
+  --color-light-shades-alpha-6: rgba(3, 14, 49, 0.54);
+  --color-light-shades-alpha-7: rgba(1, 8, 34, 0.68);
+  --color-light-shades-alpha-8: rgba(2, 7, 24, 0.83);
+  
+  --color-dark-shades-1: #171B1D;
+  --color-dark-shades-2: #22282B;
+  --color-dark-shades-3: #323A3F;
+  --color-dark-shades-4: #475359;
+  --color-dark-shades-5: #62737B;
+  --color-dark-shades-6: #8E9CA2;
+  
+  --color-accent: #000;
+  --color-background: #fff;
+  --color-modal-background: rgba(12, 41, 126, 0.07);
+
+  --color-error-1: rgba(161, 2, 20, 0.88);
+  --color-error-2: rgba(228, 3, 3, 0.63);
+  --color-error-3: rgba(255, 12, 12, 0.07);
+
+  --color-warning-1: rgba(124, 75, 1, 0.94);
+  --color-warning-2: rgba(217, 144, 3, 0.9);
+  --color-warning-3: rgba(255, 172, 5, 0.12);
+
+  --color-confirm-2: rgba(2, 167, 69, 0.73);
+  --color-confirm-3: rgba(30, 180, 93, 0.08);
+
+  --color-dialog: #fff;
+  --color-dialog-bg-light: rgba(12, 41, 126, 0.07);
+  --color-dialog-bg: rgba(3, 14, 49, 0.54);
+
+  --color-paywall-dark: #1D1F27;
+  
+  --color-checkbox-bg: rgba(45, 49, 63, .2);
+  --color-checkbox-bg-hover: rgba(45, 49, 63, .3);
+}

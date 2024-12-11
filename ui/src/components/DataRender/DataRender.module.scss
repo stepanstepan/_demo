@@ -1,0 +1,89 @@
+.currency {
+  display: block;
+  text-align: right;
+}
+
+.year {
+  display: block;
+  text-align: right;
+}
+
+.num {
+  display: block;
+  text-align: right;
+}
+
+.simpleData {
+  position: relative;
+  // white-space: nowrap;
+}
+
+.valuation {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.blast {
+  width: 24px;
+  height: 24px;
+  margin: 0 0 0 8px;
+}
+
+.estimated {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  font-size: 12px;
+  display: flex;
+  background: var(--color-light-shades-3);
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 0 8px;
+}
+
+.location {
+  white-space: nowrap;
+}
+
+.competitors {
+  display: flex;
+  gap: 8px;
+}
+
+.pricing {
+  position: relative;
+  margin: 0 0 12px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.pricingName {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.pricingPrice {
+  position: relative;
+  margin: 0 0 3px;
+}
+
+.pricingComment {
+  font-size: 12px;
+  opacity: .8;
+}
+
+.reviews {
+  display: block;
+  margin: 0 0;
+  padding: 0 0 0 15px;
+
+  li {
+    // display: block;
+    margin: 0 0 6px;
+    padding: 0 0;
+  }
+}
